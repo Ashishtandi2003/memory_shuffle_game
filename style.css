@@ -74,14 +74,14 @@ body {
 .front-card {
   background: var(--border-color);
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-  padding: 2rem;
+  /* padding: 2rem; */
 }
 
 .back-card {
   transform: rotateY(180deg);
   /* background-color: #6589F9; */
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-  padding: 2rem;
+  /* padding: 2rem; */
 }
 
 .card-selected {
@@ -114,23 +114,23 @@ span {
     height: 30%;
   }
   .card {
-    display: flex;
+    /* display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
     /* flex-wrap: wrap; */
     position: relative;
-    transition: all 0.3s linear;
+    transition: all 0.2s linear;
     transform-style: preserve-3d;
-    overflow: hidden;
+    /* overflow: hidden; */
     /* background-color: var(--bg-card); */
   }
 
   .card,
   .front-card,
   .back-card {
-    width: 14vw;
-    height: 14vw;
-    gap: 2rem;
+    width: 3.5rem;
+    height: 3.5rem;
+    /* gap: 2rem; */
     border-radius: 0.6rem;
   }
 
@@ -143,10 +143,12 @@ span {
   .front-card {
     background: var(--border-color);
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-    padding: 2rem;
+    /* padding: 2rem; */
   }
 
   .back-card {
+    /* position: absolute;
+    backface-visibility: hidden; */
     transform: rotateY(180deg);
     /* background-color: #6589F9; */
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
@@ -159,5 +161,15 @@ span {
 
   .card-match .front-card {
     background-color: var(--bg-card);
+  }
+
+  h1 {
+    color: white;
+    /* font-family: "Lexend Deca Light"; */
+    font-size: 2.5rem;
+  }
+  
+  span {
+    color: var(--border-color);
   }
 }
